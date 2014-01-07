@@ -92,6 +92,11 @@ int dp_lis(const T seq[], T res[], int num)
 		}
 	}
 
+	delete [] opt;
+	delete [] pos;
+	delete [] sub;
+	delete [] pred;
+
 	return max_len;
 }
 
