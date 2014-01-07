@@ -1,3 +1,5 @@
+01/07/2014
+	1. Added the longest increasing subsequence algorithm.
 05/17/2013
 	1. Fixed a bug in the iterator of align_hash_map/set: operator++()
 	might read a byte beyond the flag array.
