@@ -1,3 +1,7 @@
+10/17/2014
+	1. Added the chain_hash_set container.
+	2. Added the maximum profit scheduler dp_mps.
+	3. Fixed a parameter bug of SIGN() in math_bit.h.
 01/07/2014
 	1. Added the longest increasing subsequence algorithm.
 05/17/2013

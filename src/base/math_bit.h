@@ -43,7 +43,7 @@
 #define MULQ(x, y, lo, hi)						\
 	asm("mulq %3" : "=a" (lo), "=d" (hi) : "%0" (x), "rm" (y))
 
-#define SIGN(x)		    (((v) > 0) - ((v) < 0))
+#define SIGN(x)		    (((x) > 0) - ((x) < 0))
 #define OPPOSITE_SIGN(x,y)  ((x) ^ (y) < 0)
 #define ABS(x) ({							\
 			typeof(x) _t = (x) >> sizeof(x) * BITS_PER_BYTE - 1; \

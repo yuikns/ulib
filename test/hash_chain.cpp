@@ -59,6 +59,23 @@ int main()
 	for (chain_hash_map<int, int>::iterator t = ch.begin(); t != ch.end(); t++)
 		printf("%d\t%d\n", t.key(), t.value());
 
+	chain_hash_set<int> cs(2);
+
+	cs.insert(3);
+	cs.insert(2);
+	cs.insert(1);
+	assert(cs.size() == 3);
+	printf("Before sorting:\n");
+	for (chain_hash_set<int>::const_iterator it = cs.begin();
+	     it != cs.end(); ++it)
+		printf("%d\n", it.key());
+	cs.snap();
+	cs.sort();
+	printf("After sorting:\n");
+	for (chain_hash_set<int>::const_iterator it = cs.begin();
+	     it != cs.end(); ++it)
+		printf("%d\n", it.key());
+
 	printf("passed\n");
 
 	return 0;
